@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".Main2Activity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar Recetario"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="#E0582C"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <EditText
+        android:id="@+id/Ebuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:hint="Introduzca el nombre del recetario" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre de Recetario"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textColor="#8A420A"/>
+
+
+    <TextView
+        android:id="@+id/tv_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#060607"
+        android:textSize="20dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingredientes"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="#8A420A"/>
+
+    <TextView
+        android:id="@+id/tv_ingredientes"
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#060607"
+        android:textSize="15dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categoria"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textColor="#8A420A"/>
+
+    <TextView
+        android:id="@+id/tv_categoria"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#060607"
+        android:textSize="20dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+        <Button
+            android:id="@+id/Bbuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/estiloboton"
+            android:text="Buscar Recetario"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+        <Button
+            android:id="@+id/BEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/estiloboton"
+            />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            app:srcCompat="@drawable/lastbaker1" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
